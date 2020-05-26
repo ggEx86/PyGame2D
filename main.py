@@ -25,8 +25,18 @@ character = pygame.image.load('Resources/standing.png')
 clock = pygame.time.Clock()
 shoot_right = pygame.image.load('Resources/shoot_right.png')
 shoot_left = pygame.image.load('Resources/shoot_left.png')
-b_im_r = pygame.image.load('Resources/bullet_r')
-b_im_l = pygame.image.load('Resources/bullet_l')
+
+
+class Bullet(object):
+    def __init__(self, b_x, b_y):
+        self.b_x = b_x
+        self.b_y = b_y
+        self.b_im_r = pygame.image.load('Resources/bullet_r')
+        self.b_im_l = pygame.image.load('Resources/bullet_l')
+
+    def shoot_b(self, win):
+        pass
+
 
 
 class Player(object):
@@ -42,35 +52,55 @@ class Player(object):
         self.right = False
         self.walkCount = 0
 
-    def bullet(self, x, y):
-        b
-
-
     def draw(self, win):
         if self.walkCount + 1 >= 27:
             self.walkCount = 0
 
         if self.left:
             if keys[pygame.K_LCTRL]:
-                self.shoot(win)
+                self.shoot_animation(win)
             else:
                 win.blit(walkLeft[self.walkCount // 3], (self.x, self.y))
                 self.walkCount += 1
         elif self.right:
             if keys[pygame.K_LCTRL]:
-                self.shoot(win)
+                self.shoot_animation(win)
             else:
                 win.blit(walkRight[self.walkCount // 3], (self.x, self.y))
                 self.walkCount += 1
         else:
             win.blit(character, (self.x, self.y))
 
-    def shoot(self, win):
+    def shoot_animation(self, win):
         if self.right:
             win.blit(shoot_right, (self.x, self.y))
         if self.left:
             win.blit(shoot_left, (self.x, self.y))
 
+    def player_movement(self):
+        if keys[pygame.K_LEFT] and self.x - self.vel > 0:  # left
+            self.x -= self.vel
+            self.left = True
+            self.right = False
+        elif keys[pygame.K_RIGHT] and self.x + self.width + self.vel < w_width:  # right
+            self.x += self.vel
+            self.right = True
+            self.left = False
+        else:
+            self.right = False
+            self.left = False
+            self.walkCount = 0
+
+        if not self.isJump:
+            if keys[pygame.K_SPACE]:
+                self.isJump = True
+        else:
+            if self.jumpCount >= -10:
+                self.y -= (self.jumpCount * abs(self.jumpCount)) * 0.5
+                self.jumpCount -= 1
+            else:
+                self.jumpCount = 10
+                self.isJump = False
 
 def redrawGameWindow():
     global walkCount
@@ -84,7 +114,6 @@ if __name__ == '__main__':
 
     char = Player(300, 410, 64, 64)  # player object
     size = w_width, w_height = 640, 480
-    char.x, char.y = 50, w_height - char.height
     win = pygame.display.set_mode(size)
     pygame.display.set_caption('Game')
 
@@ -97,29 +126,7 @@ if __name__ == '__main__':
                 run = False
 
         keys = pygame.key.get_pressed()
+        char.player_movement()
 
-        if keys[pygame.K_LEFT] and char.x - char.vel > 0:  # left
-            char.x -= char.vel
-            char.left = True
-            char.right = False
-        elif keys[pygame.K_RIGHT] and char.x + char.width + char.vel < w_width:  # right
-            char.x += char.vel
-            char.right = True
-            char.left = False
-        else:
-            char.right = False
-            char.left = False
-            char.walkCount = 0
-
-        if not char.isJump:
-            if keys[pygame.K_SPACE]:
-                char.isJump = True
-        else:
-            if char.jumpCount >= -10:
-                char.y -= (char.jumpCount * abs(char.jumpCount)) * 0.5
-                char.jumpCount -= 1
-            else:
-                char.jumpCount = 10
-                char.isJump = False
         redrawGameWindow()
     pygame.quit()

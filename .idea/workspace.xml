@@ -1,7 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="31d5d5fd-5eaa-48f7-b683-bce214e55907" name="Default Changelist" comment="" />
+    <list default="true" id="31d5d5fd-5eaa-48f7-b683-bce214e55907" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Resources/bullet_l.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -14,14 +19,22 @@
       </list>
     </option>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="ProjectId" id="1c2qns0bjBD6AZ2EqUe3CVdIQno" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showExcludedFiles" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
   <component name="RunManager" selected="Python.main">
@@ -87,47 +100,54 @@
     </task>
     <servers />
   </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+  </component>
   <component name="WindowStateProjectService">
     <state x="521" y="198" key="#Images" timestamp="1590511619329">
       <screen x="0" y="0" width="1858" height="1080" />
     </state>
     <state x="521" y="198" key="#Images/0.0.1858.1080@0.0.1858.1080" timestamp="1590511619329" />
-    <state width="1837" height="193" key="GridCell.Tab.0.bottom" timestamp="1590515352396">
+    <state width="1837" height="193" key="GridCell.Tab.0.bottom" timestamp="1590525863453">
       <screen x="0" y="0" width="1858" height="1080" />
     </state>
-    <state width="1837" height="193" key="GridCell.Tab.0.bottom/0.0.1858.1080@0.0.1858.1080" timestamp="1590515352396" />
-    <state width="1837" height="193" key="GridCell.Tab.0.center" timestamp="1590515352396">
+    <state width="1837" height="193" key="GridCell.Tab.0.bottom/0.0.1858.1080@0.0.1858.1080" timestamp="1590525863453" />
+    <state width="1837" height="193" key="GridCell.Tab.0.center" timestamp="1590525863453">
       <screen x="0" y="0" width="1858" height="1080" />
     </state>
-    <state width="1837" height="193" key="GridCell.Tab.0.center/0.0.1858.1080@0.0.1858.1080" timestamp="1590515352396" />
-    <state width="1837" height="193" key="GridCell.Tab.0.left" timestamp="1590515352396">
+    <state width="1837" height="193" key="GridCell.Tab.0.center/0.0.1858.1080@0.0.1858.1080" timestamp="1590525863453" />
+    <state width="1837" height="193" key="GridCell.Tab.0.left" timestamp="1590525863452">
       <screen x="0" y="0" width="1858" height="1080" />
     </state>
-    <state width="1837" height="193" key="GridCell.Tab.0.left/0.0.1858.1080@0.0.1858.1080" timestamp="1590515352396" />
-    <state width="1837" height="193" key="GridCell.Tab.0.right" timestamp="1590515352396">
+    <state width="1837" height="193" key="GridCell.Tab.0.left/0.0.1858.1080@0.0.1858.1080" timestamp="1590525863452" />
+    <state width="1837" height="193" key="GridCell.Tab.0.right" timestamp="1590525863453">
       <screen x="0" y="0" width="1858" height="1080" />
     </state>
-    <state width="1837" height="193" key="GridCell.Tab.0.right/0.0.1858.1080@0.0.1858.1080" timestamp="1590515352396" />
-    <state width="1837" height="341" key="GridCell.Tab.1.bottom" timestamp="1590513863057">
+    <state width="1837" height="193" key="GridCell.Tab.0.right/0.0.1858.1080@0.0.1858.1080" timestamp="1590525863453" />
+    <state width="1837" height="341" key="GridCell.Tab.1.bottom" timestamp="1590519405567">
       <screen x="0" y="0" width="1858" height="1080" />
     </state>
-    <state width="1837" height="341" key="GridCell.Tab.1.bottom/0.0.1858.1080@0.0.1858.1080" timestamp="1590513863057" />
-    <state width="1837" height="341" key="GridCell.Tab.1.center" timestamp="1590513863057">
+    <state width="1837" height="341" key="GridCell.Tab.1.bottom/0.0.1858.1080@0.0.1858.1080" timestamp="1590519405567" />
+    <state width="1837" height="341" key="GridCell.Tab.1.center" timestamp="1590519405567">
       <screen x="0" y="0" width="1858" height="1080" />
     </state>
-    <state width="1837" height="341" key="GridCell.Tab.1.center/0.0.1858.1080@0.0.1858.1080" timestamp="1590513863057" />
-    <state width="1837" height="341" key="GridCell.Tab.1.left" timestamp="1590513863057">
+    <state width="1837" height="341" key="GridCell.Tab.1.center/0.0.1858.1080@0.0.1858.1080" timestamp="1590519405567" />
+    <state width="1837" height="341" key="GridCell.Tab.1.left" timestamp="1590519405567">
       <screen x="0" y="0" width="1858" height="1080" />
     </state>
-    <state width="1837" height="341" key="GridCell.Tab.1.left/0.0.1858.1080@0.0.1858.1080" timestamp="1590513863057" />
-    <state width="1837" height="341" key="GridCell.Tab.1.right" timestamp="1590513863057">
+    <state width="1837" height="341" key="GridCell.Tab.1.left/0.0.1858.1080@0.0.1858.1080" timestamp="1590519405567" />
+    <state width="1837" height="341" key="GridCell.Tab.1.right" timestamp="1590519405567">
       <screen x="0" y="0" width="1858" height="1080" />
     </state>
-    <state width="1837" height="341" key="GridCell.Tab.1.right/0.0.1858.1080@0.0.1858.1080" timestamp="1590513863057" />
-    <state x="962" y="438" key="com.intellij.ide.util.TipDialog" timestamp="1590503933847">
+    <state width="1837" height="341" key="GridCell.Tab.1.right/0.0.1858.1080@0.0.1858.1080" timestamp="1590519405567" />
+    <state x="962" y="438" key="com.intellij.ide.util.TipDialog" timestamp="1590525354292">
       <screen x="0" y="0" width="1858" height="1080" />
     </state>
-    <state x="962" y="438" key="com.intellij.ide.util.TipDialog/0.0.1858.1080@0.0.1858.1080" timestamp="1590503933847" />
+    <state x="962" y="438" key="com.intellij.ide.util.TipDialog/0.0.1858.1080@0.0.1858.1080" timestamp="1590525354292" />
+    <state x="738" y="457" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1590516257230">
+      <screen x="0" y="0" width="1858" height="1080" />
+    </state>
+    <state x="738" y="457" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1858.1080@0.0.1858.1080" timestamp="1590516257230" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
