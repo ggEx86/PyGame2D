@@ -70,13 +70,13 @@ class Player(object):
         self.jumpCount = 10
         self.hold_gun = False
 
-    def draw(self, win):
+    def draw(self, win):                    #DRAW PLAYER ANIMATIONS
         if self.walkCount + 1 >= 27:
             self.walkCount = 0
 
         if self.left:
             if _game.keys[pygame.K_LCTRL]:
-                self.shoot_animation(win)
+                self.gun_animation(win, _game)
                 self.hold_gun = True
             else:
                 win.blit(walkLeft[self.walkCount // 3], (self.x, self.y))
@@ -84,8 +84,8 @@ class Player(object):
                 self.hold_gun = False
         elif self.right:
             if _game.keys[pygame.K_LCTRL]:
-                self.shoot_animation(win)
                 self.hold_gun = True
+                self.gun_animation(win, _game)
             else:
                 win.blit(walkRight[self.walkCount // 3], (self.x, self.y))
                 self.walkCount += 1
@@ -124,11 +124,17 @@ class Player(object):
                 self.isJump = False
                 self.jumpCount = 10
 
-    def shoot_animation(self, win):
+    def gun_animation(self, win, _game):
         if self.right and not self.left:
             win.blit(shoot_right, (self.x, self.y))
         if self.left and not self.right:
             win.blit(shoot_left, (self.x, self.y))
+
+    def shoot_bullet(self, win, _game):
+        bllt = Bullet(self)
+        bllt.bullet_movement(self)
+        bllt.draw_bullet(win, self)
+
 
 
 class Bullet(object):
@@ -145,14 +151,16 @@ class Bullet(object):
             if self.s_right:
                 win.blit(bulletR, (_player.x + 64, _player.y + 10))
             elif self.s_left:
-                win.blit(bulletL, (_player.))
+                win.blit(bulletL, (_player.x, _player.y))
 
-    def bullet_movement(self, _player):
+    def bullet_movement(self):
         while self.exists:
             if self.s_right:
-                self.bullet_x += self.bullet_vel
+                if self.bullet_x + 15 < _game.w_width:
+                    self.bullet_x += self.bullet_vel
             elif self.s_left:
-                self.bullet_x -= self.bullet_vel
+                if self.bullet_x - 15 > 0:
+                    self.bullet_x -= self.bullet_vel
 
 
 if __name__ == '__main__':

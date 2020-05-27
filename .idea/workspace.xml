@@ -3,8 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="31d5d5fd-5eaa-48f7-b683-bce214e55907" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Resources/shoot_left.png" beforeDir="false" afterPath="$PROJECT_DIR$/Resources/shoot_left.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Resources/shoot_right.png" beforeDir="false" afterPath="$PROJECT_DIR$/Resources/shoot_right.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -127,40 +125,48 @@
       <option name="project" value="LOCAL" />
       <updated>1590591663556</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="&quot;Bullet object added, working on shooting actual bullet animation&quot;">
+      <created>1590607190011</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1590607190011</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="&quot;OOP simplified, Player object + bullet object, added graphics for bullets and movement&quot;" />
     <MESSAGE value="&quot;Working OOP model, Game class and Player class added properly&quot;" />
-    <option name="LAST_COMMIT_MESSAGE" value="&quot;Working OOP model, Game class and Player class added properly&quot;" />
+    <MESSAGE value="&quot;Bullet object added, working on shooting actual bullet animation&quot;" />
+    <option name="LAST_COMMIT_MESSAGE" value="&quot;Bullet object added, working on shooting actual bullet animation&quot;" />
   </component>
   <component name="WindowStateProjectService">
     <state x="521" y="198" key="#Images" timestamp="1590511619329">
       <screen x="0" y="0" width="1858" height="1080" />
     </state>
     <state x="521" y="198" key="#Images/0.0.1858.1080@0.0.1858.1080" timestamp="1590511619329" />
-    <state x="583" y="134" key="CommitChangelistDialog2" timestamp="1590591662711">
+    <state x="583" y="134" key="CommitChangelistDialog2" timestamp="1590607189186">
       <screen x="0" y="0" width="1858" height="1080" />
     </state>
-    <state x="583" y="134" key="CommitChangelistDialog2/0.0.1858.1080@0.0.1858.1080" timestamp="1590591662711" />
-    <state width="1837" height="210" key="GridCell.Tab.0.bottom" timestamp="1590601518191">
+    <state x="583" y="134" key="CommitChangelistDialog2/0.0.1858.1080@0.0.1858.1080" timestamp="1590607189186" />
+    <state width="1837" height="210" key="GridCell.Tab.0.bottom" timestamp="1590612772037">
       <screen x="0" y="0" width="1858" height="1080" />
     </state>
-    <state width="1837" height="210" key="GridCell.Tab.0.bottom/0.0.1858.1080@0.0.1858.1080" timestamp="1590601518191" />
-    <state width="1837" height="210" key="GridCell.Tab.0.center" timestamp="1590601518191">
+    <state width="1837" height="210" key="GridCell.Tab.0.bottom/0.0.1858.1080@0.0.1858.1080" timestamp="1590612772037" />
+    <state width="1837" height="210" key="GridCell.Tab.0.center" timestamp="1590612772037">
       <screen x="0" y="0" width="1858" height="1080" />
     </state>
-    <state width="1837" height="210" key="GridCell.Tab.0.center/0.0.1858.1080@0.0.1858.1080" timestamp="1590601518191" />
-    <state width="1837" height="210" key="GridCell.Tab.0.left" timestamp="1590601518191">
+    <state width="1837" height="210" key="GridCell.Tab.0.center/0.0.1858.1080@0.0.1858.1080" timestamp="1590612772037" />
+    <state width="1837" height="210" key="GridCell.Tab.0.left" timestamp="1590612772037">
       <screen x="0" y="0" width="1858" height="1080" />
     </state>
-    <state width="1837" height="210" key="GridCell.Tab.0.left/0.0.1858.1080@0.0.1858.1080" timestamp="1590601518191" />
-    <state width="1837" height="210" key="GridCell.Tab.0.right" timestamp="1590601518191">
+    <state width="1837" height="210" key="GridCell.Tab.0.left/0.0.1858.1080@0.0.1858.1080" timestamp="1590612772037" />
+    <state width="1837" height="210" key="GridCell.Tab.0.right" timestamp="1590612772037">
       <screen x="0" y="0" width="1858" height="1080" />
     </state>
-    <state width="1837" height="210" key="GridCell.Tab.0.right/0.0.1858.1080@0.0.1858.1080" timestamp="1590601518191" />
+    <state width="1837" height="210" key="GridCell.Tab.0.right/0.0.1858.1080@0.0.1858.1080" timestamp="1590612772037" />
     <state width="1185" height="341" key="GridCell.Tab.1.bottom" timestamp="1590583713506">
       <screen x="0" y="0" width="1858" height="1080" />
     </state>
@@ -181,10 +187,10 @@
       <screen x="0" y="0" width="1858" height="1080" />
     </state>
     <state x="430" y="182" key="SettingsEditor/0.0.1858.1080@0.0.1858.1080" timestamp="1590526322416" />
-    <state x="521" y="273" key="Vcs.Push.Dialog.v2" timestamp="1590591666512">
+    <state x="521" y="273" key="Vcs.Push.Dialog.v2" timestamp="1590607193597">
       <screen x="0" y="0" width="1858" height="1080" />
     </state>
-    <state x="521" y="273" key="Vcs.Push.Dialog.v2/0.0.1858.1080@0.0.1858.1080" timestamp="1590591666512" />
+    <state x="521" y="273" key="Vcs.Push.Dialog.v2/0.0.1858.1080@0.0.1858.1080" timestamp="1590607193597" />
     <state width="937" height="548" key="XDebugger.FullValuePopup" timestamp="1590582743990">
       <screen x="0" y="0" width="1858" height="1080" />
     </state>
