@@ -21,6 +21,10 @@ walkLeft = [pygame.image.load('Resources/L1.png'),
 bg = pygame.image.load('Resources/bg.jpg')
 char = pygame.image.load('Resources/standing.png')
 clock = pygame.time.Clock()
+shoot_right = pygame.image.load('Resources/shoot_right.png')
+shoot_left = pygame.image.load('Resources/shoot_left.png')
+bulletL = pygame.image.load('Resources/bullet_l.png')
+bulletR = pygame.image.load('Resources/bullet_r.png')
 
 
 class Game:
@@ -64,17 +68,28 @@ class Player(object):
         self.right = False
         self.walkCount = 0
         self.jumpCount = 10
+        self.hold_gun = False
 
     def draw(self, win):
         if self.walkCount + 1 >= 27:
             self.walkCount = 0
 
         if self.left:
-            win.blit(walkLeft[self.walkCount // 3], (self.x, self.y))
-            self.walkCount += 1
+            if _game.keys[pygame.K_LCTRL]:
+                self.shoot_animation(win)
+                self.hold_gun = True
+            else:
+                win.blit(walkLeft[self.walkCount // 3], (self.x, self.y))
+                self.walkCount += 1
+                self.hold_gun = False
         elif self.right:
-            win.blit(walkRight[self.walkCount // 3], (self.x, self.y))
-            self.walkCount += 1
+            if _game.keys[pygame.K_LCTRL]:
+                self.shoot_animation(win)
+                self.hold_gun = True
+            else:
+                win.blit(walkRight[self.walkCount // 3], (self.x, self.y))
+                self.walkCount += 1
+                self.hold_gun = False
         else:
             win.blit(char, (self.x, self.y))
 
@@ -108,6 +123,36 @@ class Player(object):
             else:
                 self.isJump = False
                 self.jumpCount = 10
+
+    def shoot_animation(self, win):
+        if self.right and not self.left:
+            win.blit(shoot_right, (self.x, self.y))
+        if self.left and not self.right:
+            win.blit(shoot_left, (self.x, self.y))
+
+
+class Bullet(object):
+    def __init__(self, _player):
+        self.bullet_x = _player.x
+        self.bullet_y = _player.y
+        self.bullet_vel = 7
+        self.exists = True
+        self.s_right = True if _player.right else False
+        self.s_left = True if _player.left else False
+
+    def draw_bullet(self, win, _player):
+        if _player.hold_gun:
+            if self.s_right:
+                win.blit(bulletR, (_player.x + 64, _player.y + 10))
+            elif self.s_left:
+                win.blit(bulletL, (_player.))
+
+    def bullet_movement(self, _player):
+        while self.exists:
+            if self.s_right:
+                self.bullet_x += self.bullet_vel
+            elif self.s_left:
+                self.bullet_x -= self.bullet_vel
 
 
 if __name__ == '__main__':
